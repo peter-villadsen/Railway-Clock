@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Railroad.Clock"
+        xmlns:settings="clr-namespace:Railroad.Clock.Properties"        
         mc:Ignorable="d"
         WindowStyle="None"
         AllowsTransparency="True"  
@@ -13,22 +14,22 @@
     
     <Window.ContextMenu>
         <ContextMenu Name="cm"  StaysOpen="true">
-            <MenuItem Header="Minimize" Command="{x:Static local:MainWindow.MinimizeCommand}" />
-            <MenuItem Header="Normalize" Command="{x:Static local:MainWindow.NormalizeCommand}"/>
-            <MenuItem Header="Maximize" Command="{x:Static local:MainWindow.MaximizeCommand}" />
+            <MenuItem Header="Minimize" Command="{Binding MinimizeCommand}" />
+            <MenuItem Header="Normalize" Command="{Binding NormalizeCommand}"/>
+            <MenuItem Header="Maximize" Command="{Binding MaximizeCommand}" />
             <Separator/>
             <MenuItem Header="Seconds sweep" IsCheckable="True" IsChecked="{Binding SecondsSweep}"/>
             <MenuItem Header="Minutes sweep" IsCheckable="True" IsChecked="{Binding MinutesSweep}"/>
             <Separator/>
-            <MenuItem Header="Exit" Command="{x:Static local:MainWindow.ExitCommand}"/>
+            <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
         </ContextMenu>
     </Window.ContextMenu>
     
     <Grid >
         <Viewbox>
-            <local:ClockControl x:Name="Clock" IsDiscrete="{Binding SecondsSweep}" IsRunning="True" Numerals="3;6;9;12" IsMinuteSweepMode="{Binding MinutesSweep}" 
+            <local:ClockControl x:Name="Clock" IsDiscrete="{Binding SecondsSweep}"  Numerals="3;6;9;12" IsMinuteSweepMode="{Binding MinutesSweep}" 
                                 MouseWheel="Clock_MouseWheel"
-                                FontSize="9" Style="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type local:ClockControl}, ResourceId=ClockStyleOffice}}"  />
+                                FontSize="9" Style="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type local:ClockControl}, ResourceId=ClockStyleDanishDesign}}"  />
         </Viewbox>
     </Grid>
 </Window>
