@@ -6,6 +6,7 @@
     <UseWPF>true</UseWPF>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisLevel>5.0</AnalysisLevel>
+    <ApplicationIcon>DanishDesign.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

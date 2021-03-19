@@ -29,7 +29,7 @@
         <Viewbox>
             <local:ClockControl x:Name="Clock" IsDiscrete="{Binding SecondsSweep}"  Numerals="3;6;9;12" IsMinuteSweepMode="{Binding MinutesSweep}" 
                                 MouseWheel="Clock_MouseWheel"
-                                FontSize="9" Style="{StaticResource {ComponentResourceKey TypeInTargetAssembly={x:Type local:ClockControl}, ResourceId=ClockStyleDanishDesign}}"  />
+                                FontSize="9" Style="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type local:ClockControl}, ResourceId=ClockStyleDanishDesign}}"  />
         </Viewbox>
     </Grid>
 </Window>

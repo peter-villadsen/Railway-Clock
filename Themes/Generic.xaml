@@ -1655,11 +1655,11 @@
                                             <GeometryDrawing>
                                                 <GeometryDrawing.Geometry>
                                                     <GeometryGroup>
-                                                        <EllipseGeometry Center="50,50" RadiusX="47.5" RadiusY="47.5" />
+                                                        <EllipseGeometry Center="50,50" RadiusX="48.5" RadiusY="48.5" />
                                                     </GeometryGroup>
                                                 </GeometryDrawing.Geometry>
                                                 <GeometryDrawing.Pen>
-                                                    <Pen Thickness="2" Brush="DarkGray"/>
+                                                    <Pen Thickness="3.2" Brush="DarkGray"/>
                                                 </GeometryDrawing.Pen>
                                                 <GeometryDrawing.Brush>
                                                     <SolidColorBrush Color="WhiteSmoke"/>
