@@ -6,8 +6,12 @@
     <UseWPF>true</UseWPF>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <AnalysisLevel>5.0</AnalysisLevel>
-    <ApplicationIcon>DanishDesign.ico</ApplicationIcon>
+    <ApplicationIcon>48745_clock_icon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="48745_clock_icon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Settings.Designer.cs">
