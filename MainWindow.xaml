@@ -21,6 +21,9 @@
             <MenuItem Header="Seconds sweep" IsCheckable="True" IsChecked="{Binding SecondsSweep}"/>
             <MenuItem Header="Minutes sweep" IsCheckable="True" IsChecked="{Binding MinutesSweep}"/>
             <Separator/>
+            <MenuItem Header="Danish Design" Click="DanishDesign_Click"/>
+            <MenuItem Header="Swiss Railway" Click="SwissRailway_Click"/>
+            <Separator/>
             <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
         </ContextMenu>
     </Window.ContextMenu>

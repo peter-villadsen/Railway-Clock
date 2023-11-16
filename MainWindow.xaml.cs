@@ -20,7 +20,6 @@ namespace Railroad.Clock
             InitializeComponent();
         }
 
-
         private void OnLeftMouseButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
@@ -44,6 +43,23 @@ namespace Railroad.Clock
                 this.Width += factor;
                 this.Height += factor;
             }
+        }
+
+        private void SelectStyle(string name)
+        {
+            var resourceKey = new ComponentResourceKey(typeof(ClockControl), name);
+            var style = Application.Current.TryFindResource(resourceKey) as Style;
+            this.Clock.Style = style;
+        }
+
+        private void DanishDesign_Click(object sender, RoutedEventArgs e)
+        {
+            SelectStyle("ClockStyleDanishDesign");
+        }
+
+        private void SwissRailway_Click(object sender, RoutedEventArgs e)
+        {
+            SelectStyle("ClockStyleOffice");
         }
     }
 }
